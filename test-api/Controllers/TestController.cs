@@ -22,7 +22,7 @@ namespace test_api.Controllers
         public string Get()
         {
             _logger.LogInformation("TestController.Get() called");
-            return Environment.GetEnvironmentVariable("TEST-API-HOST");
+            return "Host = " + Environment.GetEnvironmentVariable("TEST-API-HOST");
         }
     }
 }
